@@ -1,4 +1,4 @@
-CFLAGS = -I. -Wall -pedantic
+CFLAGS = -I. -Wall -pedantic -std=c99
 DEPS = list.h
 OBJ = list_example.o
 
