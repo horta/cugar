@@ -21,7 +21,7 @@ static inline struct list* list_head(struct list const* list) { return list->nex
 
 static inline struct list* list_tail(struct list const* list) { return list->next == list ? NULL : list->prev; }
 
-static inline struct list* list_next(struct list const* list, struct list* item)
+static inline struct list* list_next(struct list const* list, struct list const* item)
 {
     return item->next == list ? NULL : item->next;
 }
