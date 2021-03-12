@@ -3,7 +3,7 @@
 
 #include <stddef.h>
 
-#define container_of(ptr, type, member) ((type*)((ptr)-offsetof(type, member)))
+#define container_of(ptr, type, member) ((type*)((size_t)(void*)(ptr)-offsetof(type, member)))
 
 struct list
 {
