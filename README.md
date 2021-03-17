@@ -34,7 +34,7 @@ int main(void)
 
     list_add(&list, &foo.link);
 
-    return container_of(list_head(&list), struct Foo, link)->value;
+    return CONTAINER_OF(list_head(&list), struct Foo, link)->value;
 }
 ```
 
